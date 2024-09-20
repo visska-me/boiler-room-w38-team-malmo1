@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(5, 20%);
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   min-height: 100vh; /* Обеспечиваем, что body занимает всю высоту экрана */
@@ -54,9 +54,9 @@ p {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 1em;
+  padding: 0;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   flex-shrink: 0; /* Гарантируем, что футер не сожмется и всегда будет внизу */
