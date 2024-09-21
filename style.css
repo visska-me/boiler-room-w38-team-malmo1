@@ -1,7 +1,7 @@
 /* Общие стили */
 html, body {
   font-size: 13px;
-  height: 100%; /* Устанавливаем 100% высоту для html и body */
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -40,11 +40,11 @@ nav ul li a {
 
 main {
   display: flex;
-  flex: 1; /* Это позволяет main растягиваться и заполнять пространство между header и footer */
+  flex: 1;
   flex-direction: column;
   background-color: white;
   padding: 20px;
-  text-align: center; /* Центрируем текст на странице */
+  text-align: center;
 }
 
 .hero{
@@ -99,10 +99,10 @@ footer {
   padding: 5px;
   text-align: center;
   bottom: 0;
-  flex-shrink: 0; /* Гарантируем, что футер не сожмется и всегда будет внизу */
+  flex-shrink: 0;
 }
 
-/* Адаптивные стили */
+
 @media (min-width: 320px) {
 
   body{
