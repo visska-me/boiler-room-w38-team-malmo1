@@ -11,12 +11,12 @@ ul, li, h1, h2, h3, h4 {
 }
 
 header {
-  font-size: 15px;
-  height: 135px;
-  background-color: #333;
+  font-size: 18px;
+  display: block;
+  background-color: rgb(28, 22, 22);
   color: #fff;
-  padding: 1em;
   text-align: center;
+  padding: 20px 0;
 }
 
 nav ul {
@@ -42,11 +42,22 @@ main {
   text-align: center;
 }
 
-.hero{
+.cover {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  width: auto;
+  min-height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-image {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #text1{
@@ -154,7 +165,7 @@ p {
 }
 
 footer {
-  background-color: #333;
+  background-color: rgb(28, 22, 22);
   color: #fff;
   padding: 5px;
   text-align: center;
@@ -167,7 +178,6 @@ footer {
 
   header{
     font-size: 20px;
-    height: 155px;
   }
 
   main{
@@ -179,11 +189,8 @@ footer {
     width: 100%;
   }
 
-  .hero{
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  .cover {
+    min-height: 70vh; 
   }
 
   #text1{
@@ -227,8 +234,11 @@ footer {
 @media (min-width: 1025px) {
 
   header{
-    font-size: 30px;
-    height: 225px;
+    font-size: 22px;
+  }
+
+  .cover {
+    min-height: 80vh; 
   }
 
   main{
