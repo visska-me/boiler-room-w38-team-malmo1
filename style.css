@@ -164,6 +164,11 @@ p {
  color: white;
 }
 
+.contact-info{
+  margin: 50px;
+  min-height: 100vh;
+}
+
 .site-footer p {
   background-color: rgb(0, 0, 0) !important;
   color: white !important;
