@@ -18,15 +18,15 @@ body {
   grid-template-rows: 1fr 5fr;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--bg-color) !important;
-  color: var(--text-color) !important;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 header {
   font-size: 15px;
   height: 135px;
-  background-color: var(--header-bg) !important;
-  color: var(--header-text) !important;
+  background-color: var(--header-bg);
+  color: var(--header-text);
   padding: 1em;
   text-align: center;
 }
@@ -52,7 +52,7 @@ main {
   flex-direction: column;
   background-color: white;
   padding: 20px;
-  text-align: center; /* Центрируем текст на странице */
+  text-align: center;
 }
 
 .hero {
@@ -85,7 +85,7 @@ article {
   margin: 20px;
   border: 1.5px solid black;
   border-radius: 5%;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color); 
   color: var(--text-color); 
 }
 
@@ -94,7 +94,7 @@ article {
 }
 
 h1, h2 {
-  color: var(--header-text); 
+  color: var(--header-text);
 }
 
 p {
@@ -111,49 +111,53 @@ footer {
   bottom: 0;
   flex-shrink: 0; /* Гарантируем, что футер не сожмется и всегда будет внизу */
 }
+
+/* TILLÄGG FÖR MÖRKT LÄGE */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #333 !important; 
-    --text-color: #f0f0f0 !important;
-    --header-bg: #222 !important;
-    --header-text: #fff !important;
+    --bg-color: #333;
+    --text-color: #f0f0f0;
+    --header-bg: #222;
+    --header-text: #fff;
   }
 
   body {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
 
   main {
-    background-color: var(--bg-color) !important;
+    background-color: var(--bg-color);
   }
 
   footer {
-    background-color: var(--header-bg) !important;
-    color: var(--header-text) !important;
+    background-color: var(--header-bg);
+    color: var(--header-text);
   }
 
   .section1, .section2, .section3, .section4 {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
 
   header {
-    background-color: var(--header-bg) !important;
-    color: var(--header-text) !important;
+    background-color: var(--header-bg);
+    color: var(--header-text);
   }
 
   #omOss, #våraMål, #lorem1, #lorem2 {
-    color: var(--text-color) !important;
+    color: var(--text-color);
   }
 
   h1, h2 {
-    color: var(--header-text) !important;
+    color: var(--header-text);
   }
+
   p {
-    color: var(--text-color) !important;
+    color: var(--text-color);
   }
 }
+
 /* Адаптивные стили */
 @media (min-width: 320px) {
   body {
