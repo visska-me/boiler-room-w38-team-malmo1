@@ -98,7 +98,7 @@ h1, h2 {
 }
 
 p {
-  color: var(--text-color); /* textfärgen*/
+  color: var(--text-color);
   font-size: 1.1rem;
   margin: 10px 0;
 }
